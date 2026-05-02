@@ -50,6 +50,7 @@ enum class ListLayout(
 }
 
 private fun getNumColumns(context: Context, columnWidthSP: Float = 90f): Int {
+    return 5;
     val displayMetrics = context.resources.displayMetrics
     val widthColumnPx =
         TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, columnWidthSP, displayMetrics)
